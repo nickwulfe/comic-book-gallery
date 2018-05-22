@@ -25,7 +25,7 @@ namespace ComicBookGallery.Controllers
             {
                 HttpNotFound();
             }
-            var comicBooks = _comicBookRepository.GetComicBook(id.Value);
+            var comicBooks = _comicBookRepository.GetComicBooks(id.Value);
             
 
             

@@ -15,7 +15,7 @@ namespace ComicBookGallery.Controllers
 
         public ActionResult Index()
         {
-            var comicBooks = _comicBookRepository.GetComicBooks();
+            var comicBooks = _comicBookRepository.GetComicBook();
 
             return View(comicBooks);
         }
@@ -25,7 +25,7 @@ namespace ComicBookGallery.Controllers
             {
                 HttpNotFound();
             }
-            var comicBooks = _comicBookRepository.GetComicBooks(id.Value);
+            var comicBooks = _comicBookRepository.GetComicBook(id.Value);
             
 
             

@@ -66,7 +66,7 @@ namespace ComicBookGallery.Data
             return _comicBooks;
         }
 
-        public ComicBook GetComicBook(int id)
+        public ComicBook GetComicBooks(int id)
         {
             ComicBook comicBookToReturn = null;
 

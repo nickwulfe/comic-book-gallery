@@ -25,11 +25,11 @@ namespace ComicBookGallery.Controllers
             {
                 HttpNotFound();
             }
-            var comicBook = _comicBookRepository.GetComicBook(id.Value);
+            var comicBooks = _comicBookRepository.GetComicBooks(id.Value);
             
 
             
-            return View(comicBook);
+            return View(comicBooks);
         }
     }
 }
